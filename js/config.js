@@ -15,7 +15,7 @@ const SITE = {
   /* PROJETOS (destaques do Instagram)
      grupo: "ultimos" (cards grandes), "categoria" (grade) ou "retro" (faixa larga)
      icone: ícone grande da capa (já embutido no site, não precisa de imagem).
-            opções: obra, banheiro, cozinha, parede, piso, granito, rodape,
+            opções: obra, banheiro, cozinha, parede, piso, granito, pedra, rodape,
                     azulejo, piscina, retro
      link:  endereço do destaque (abre ao clicar) */
   projetos: [
@@ -27,6 +27,7 @@ const SITE = {
     { grupo: "categoria", titulo: "Paredes",           icone: "parede",            link: "https://www.instagram.com/stories/highlights/18061532548972823/" },
     { grupo: "categoria", titulo: "Pisos",             icone: "piso",              link: "https://www.instagram.com/stories/highlights/18095635003594814/" },
     { grupo: "categoria", titulo: "Granitos",          icone: "granito",           link: "https://www.instagram.com/stories/highlights/18626571427020225/" },
+    { grupo: "categoria", titulo: "Pedras naturais",icone: "pedra",           link: "https://www.instagram.com/stories/highlights/18468005515191470/" },
     { grupo: "categoria", titulo: "Rodapés",           icone: "rodape",            link: "https://www.instagram.com/stories/highlights/18116190322969155/" },
     { grupo: "categoria", titulo: "Azulejo trabalhado",icone: "azulejo", link: "https://www.instagram.com/stories/highlights/18085619536853187/" },
     { grupo: "categoria", titulo: "Piscinas",          icone: "piscina",           link: "https://www.instagram.com/stories/highlights/18036855740342482/" },

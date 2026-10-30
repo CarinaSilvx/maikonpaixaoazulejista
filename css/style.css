@@ -90,7 +90,7 @@ footer{background:var(--ink);color:#9fb0cf;padding:1.6rem 0;font-size:.95rem}
 .foot img{background:#fff;border-radius:50%;padding:2px}
 footer a{color:var(--gold);text-decoration:none}
 
-.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.35);animation:pulse 2.6s infinite}
+.wa-float{position:fixed;right:18px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.35);animation:pulse 2.6s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 10px 28px rgba(0,0,0,.35)}70%,100%{box-shadow:0 0 0 20px rgba(37,211,102,0),0 10px 28px rgba(0,0,0,.35)}}
 
 @media(max-width:900px){
@@ -112,7 +112,8 @@ footer a{color:var(--gold);text-decoration:none}
 .grp::before{content:"";width:14px;height:14px;background:var(--gold);clip-path:polygon(50% 0,100% 100%,0 100%)}
 .pgrid{display:grid;gap:1rem;margin-bottom:1rem}
 .pgrid.feat{grid-template-columns:repeat(3,1fr)}
-.pgrid.cats{grid-template-columns:repeat(4,1fr)}
+.pgrid.cats{grid-template-columns:repeat(3,1fr)}
+.pgrid.cats .pcard{aspect-ratio:1/1}
 .pcard{position:relative;display:block;overflow:hidden;border-radius:18px;aspect-ratio:4/5;color:#fff;text-decoration:none;isolation:isolate;
  background:linear-gradient(150deg,var(--navy2),var(--ink));box-shadow:0 14px 34px rgba(11,27,58,.18);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
 .pcard:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(11,27,58,.3)}
@@ -140,6 +141,8 @@ footer a{color:var(--gold);text-decoration:none}
  .pgrid.feat{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.8rem;scrollbar-width:none}
  .pgrid.feat .pcard{scroll-snap-align:start}
  .pgrid.cats{grid-template-columns:repeat(2,1fr)}
+ .pgrid.cats .pcard{aspect-ratio:4/5}
+ .pgrid.cats .pcard:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:16/10}
  .pinfo b{font-size:1.3rem}.go{width:34px;height:34px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
